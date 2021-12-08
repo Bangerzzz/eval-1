@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function exo4(tab){
+        if(Array.isArray(tab)==false){
+            console.log("Le paramètre de la fonction exo4 n'est pas un tableau");
+        }
+        else if(tab.length==0){
+            console.log("Le paramètre de la fonction exo4 est un tableau vide");
+        }
+        else{ 
+            console.log(tab[Math.floor(Math.random() * tab.length)]);
+            //On a juste besoin de prendre un entier entre 0 et la taille du tableau aléatoirement
+        }
+    }
+    
+    exo4(['a','b','c','d']);
+    exo4([]);
+    exo4("");
+    </script>
+</body>
+</html>
