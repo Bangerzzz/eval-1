@@ -34,7 +34,7 @@
                 titre: article.titre,
                 id: article.id,
                 like: article.like,
-                auteurs: auteurs.filter(auteur =>{
+                auteurs: auteurs.find(auteur =>{
                     return auteur.id === article.id_auteur
                 }),
                 commentaires: commentaires
